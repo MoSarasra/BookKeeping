@@ -23,9 +23,6 @@
             <!--Navbar-->
             <nav class="navbar">
                 <ul class="nav-list">
-                    <li>
-                        <a href="login.html"><i class='bx bx-log-in'></i>login</a>
-                    </li>
 
                     <li>
                         <a href="login.html"><i class='bx bx-user-circle'></i>sign up</a>
@@ -35,46 +32,21 @@
         </div>
     </header>
     <!--/.Header End-->
-
-    <div>
-
-        <div class="login">
-            <div class="login-screen">
-                <div class="app-title">
-                    <h1 ">Login</h1>
-                </div>
-
-
-
-      <form action='' method=" post">
-
-                        <div class="login-form">
-                            <div class="control-group">
-                                <input type="email" class="login-field" value="" placeholder="email" id="login-name"
-                                    name="username">
-                                <label></label>
-                            </div>
-
-                            <div class="control-group">
-                                <input type="password" class="login-field" value="" placeholder="password"
-                                    id="login-pass" name="password">
-                                <label></label>
-                            </div>
-
-                            <input type="submit" name="login" value="Login" class="btn btn-primary btn-large btn-block"
-                                style="background-color: #157DEC">
-
-                            <a class="login-link" href="contact.php">Lost your password?</a>
-                        </div>
-
-                        </form>
-                </div>
-
-            </div>
-        </div>
-
+    <div class="container2">
+		<h1 class="label">User Login</h1>
+		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Email </div>
+			<input autocomplete="off" type="email" name="email">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password">
+			<div id="pass_error">Please fill up your Password</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>	
+                 
         <!--/.Page Content End-->
-
+       <script src="../JS/LoginValidation.js"></script>
         <footer class="footer">
             <p>@Copyright By Hyper-Text 2022</p>
         </footer>

@@ -17,7 +17,7 @@ body{
 .header{
     height: 8vh;
     width: 100vw;
-    display: flex;
+    display: block;
     align-items: center;
     background-color: #8AABCA;
 }
