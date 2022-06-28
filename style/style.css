@@ -87,7 +87,7 @@ body{
 }
 .all-customer .all-customer-table table {
     width: 80vw;
-    margin-top: 100px;
+    margin-top: 20px;
     border: 1px solid #8AABCA;
     border-collapse: collapse;
 }
@@ -105,18 +105,33 @@ body{
     border: 1px solid #eeeeee;
 }
 
-.all-customer .all-customer-table table .action-btns .bx-trash{
-    padding: 5px;
+.all-customer  .delete{
+    padding: 5px 10px;
     color: #fff;
     font-size: 22px;
     border-radius: 6px;
     background-color: #FF5757;
 }
 
-.all-customer .all-customer-table table .action-btns .bx-edit-alt{
+.all-customer  .edit{
     padding: 5px;
     color: #fff;
     font-size: 22px;
     border-radius: 6px;
     background-color: #38B6FF;
+}
+
+#book-form{
+    padding: 10px 150px;
+    text-align: center;
+}
+.all-customer input{
+   font-size: 18px;
+   padding: 10px 20px;
+   border-radius: 4px;
+   border: 2px solid #8AABCA;
+}
+
+.all-customer .add-btn{
+    background-color: #8AABCA;
 }
