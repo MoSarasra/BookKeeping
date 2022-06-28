@@ -3,6 +3,7 @@
     "ID": 1,
     "companyName" : "hyperText",
     "email": "hyperText@gmail.com",
+    "password": "123MM*",
     "country" : "palestine",
     "currency" : "dollar"
      
