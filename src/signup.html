@@ -49,38 +49,35 @@
         <div class="signup">
             <div class="signup-screen">
                 <div class="app-title">
-
                     <h1> SignUp <img src="../pics/signup.png"></h1>
                 </div>
 
-
-
-                <form action='' method=" post">
+                <form id='signup'>
 
                     <div class="signup-form">
                         <div class="control-group">
                             <label>Username </label>
-                            <input type="string" value="" required>
+                            <input type="string" id="username" name="username" required>
                         </div>
 
                         <div class="control-group">
                             <label>Email &nbsp &nbsp &nbsp </label>
-                            <input type="email" value="" required>
+                            <input type="email" id="email" name="email" required>
                         </div>
 
                         <div class="control-group">
                             <label>Password &nbsp </label>
-                            <input type="password" value="" required>
+                            <input type="password" id="password" name="password" required>
                         </div>
 
                         <div class="control-group">
                             <label>BusinessName</label>
-                            <input type="string" value="" required>
+                            <input type="string" id="BusinessName" name="BusinessName" required>
                         </div>
 
                         <div class="control-group select">
                             <label>Country</label>
-                            <select>
+                            <select id='country' name="country">
                                 <option value="palestine ">Palestine</option>
                                 <option value="Jordan">Jordan</option>
                                 <option value="Lebanon">Lebanon</option>
@@ -88,13 +85,11 @@
                                 <option value="Egypt">Egypt</option>
                                 <option value="Iraq">Iraq</option>
                             </select>
-
-
                         </div>
 
                         <div class="control-group select">
                             <label>Currency</label>
-                            <select>
+                            <select id="currency" name="currency">
                                 <option value="Dollar ">Dollar</option>
                                 <option value="Euro">Euro</option>
                                 <option value="Dinar">Dinar</option>
@@ -103,7 +98,8 @@
                         </div>
 
 
-                        <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-large btn-block">
+                        <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-large btn-block"
+                            onclick="submitForm()">
 
                         <a class="signup-link" href="login.html">Back to Login page</a>
                     </div>
@@ -119,6 +115,8 @@
     <footer class="footer">
         <p>@Copyright By Hyper-Text 2022</p>
     </footer>
+
+    <script src="../js/signup.js"></script>
 
 </body>
 
