@@ -1,0 +1,18 @@
+[{
+    
+    "ID": 1,
+    "companyName" : "hyperText",
+    "email": "hyperText@gmail.com",
+    "password": "123MM*",
+    "country" : "palestine",
+    "currency" : "dollar"
+     
+},
+{
+"ID": 2,
+"companyName" : "hyperText2",
+"email": "hyperText2@gmail.com",
+"password": "123MM*2",
+"country" : "palestine",
+"currency" : "dollar"
+}]

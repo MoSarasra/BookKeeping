@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../style/addUserPage.css">
+        <link rel="stylesheet" href="../style/style.css">
+    
+    </head>
+    
+    <body>
+    
+        <!--Header Start-->
+        <header class="header" id="header">
+            <div class="container">
+                <!--logo-->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../pics/logo3.png" alt="logo-Bookkeeping-app">
+                    </a>
+                </div>
+    
+                <!--Navbar-->
+                <nav class="navbar">
+                    <ul class="nav-list">
+    
+                        <li>
+                            <a href="index.html" id="UsernameNav"><i class='bx bx-user-circle'></i></a>
+                        </li>
+                        <li>
+                            <a href="login.html">Sign out</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--/.Header End-->
+
+        <div class="container2">
+            <h1 class="label" id="label">you can add 2 users</h1>
+            <form class="addUser_form" action="" method="post" name="form" onsubmit="return addCheck()">
+                <div class="font">Email </div>
+                <input autocomplete="off" type="email" name="new_email">
+                <div id="email_error2">Please enter a valid email</div>
+                <div class="font font2">Password</div>
+                <input type="password" name="new_password">
+                <div id="pass_error2">Please enter a valid Password</div>
+                <button type="submit">Login</button>
+            </form>
+        </div>	
+                     
+            <!--/.Page Content End-->
+            <script src="../JS/addUser.js"></script>
+            <footer class="footer">
+                <p>@Copyright By Hyper-Text 2022</p>
+            </footer>
+
+
+
+
+
+    
+        </body>
+
+
+
+    
+</html>
+
