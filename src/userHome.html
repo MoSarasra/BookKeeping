@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../style/userHome.css">
 </head>
 
-<body class = "main">
+<body class="main">
     <!--Header Start-->
     <header class="header" id="header">
         <div class="container">
@@ -19,14 +19,14 @@
 
             <i color="black">Bookkeeping</i>
             <!--Navbar-->
-            <nav class="navbar" >
+            <nav class="navbar">
                 <ul class="nav-list">
                     <li>
                         <a href="welcome.html">Home</a>
                     </li>
 
                     <li id='userNameHtml'>
-                        
+
                     </li>
 
                     <li>
@@ -39,9 +39,81 @@
     </header>
     <!--/.Header End-->
 
-    <div class="content" class="login">
-        
-hi
+    <div class="content">
+        <div class="welcomeUser">
+
+            <h2>Welcome ${username}</h2><br>
+            <h4><img src='../pics/signup.png'>&nbsp Adding another user to <b>Book_keeping App</b></h4>
+            <button class='btnt btn-primary btn-large btn-block' type='button' onclick="showdiv()"> Add User </button>
+
+
+        </div>
+        <div class="adduserOpt" id="divId">
+            <div class="signup ">
+                <div class="signup-screen">
+                    <div class="app-title">
+                        <h1> SignUp <img src="../pics/signup.png"></h1>
+                    </div>
+
+                    <form id='signup' action=''>
+
+                        <div class="signup-form">
+                            <div class="control-group">
+                                <label>Username </label>
+                                <input type="string" id="username" name="username" required>
+                            </div>
+
+                            <div class="control-group">
+                                <label>Email &nbsp &nbsp &nbsp </label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="control-group">
+                                <label>Password &nbsp </label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+
+                            <div class="control-group">
+                                <label>BusinessName</label>
+                                <input type="string" id="BusinessName" name="BusinessName" required>
+                            </div>
+
+                            <div class="control-group select">
+                                <label>Country</label>
+                                <select id='country' name="country">
+                                    <option value="palestine ">Palestine</option>
+                                    <option value="Jordan">Jordan</option>
+                                    <option value="Lebanon">Lebanon</option>
+                                    <option value="Syria">Syria</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="Iraq">Iraq</option>
+                                </select>
+                            </div>
+
+                            <div class="control-group select">
+                                <label>Currency</label>
+                                <select id="currency" name="currency">
+                                    <option value="Dollar ">Dollar</option>
+                                    <option value="Euro">Euro</option>
+                                    <option value="Dinar">Dinar</option>
+                                    <option value="shekel ">shekel </option>
+                                </select>
+                            </div>
+
+
+                            <input type="submit" name="submit" id='submit' value="Submit"
+                                class="btn btn-primary btn-large btn-block" onclick="submitForm()">
+
+                            <a class="signup-link" href="login.html">Back to Login page</a>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
 
     </div>
 
@@ -52,6 +124,8 @@ hi
     </footer>
 
     <script src="../js/adduser.js"></script>
+    <script src="../js/signup.js"></script>
+
 
 </body>
 

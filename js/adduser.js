@@ -14,4 +14,11 @@ function fullUser() {
 
 }
 
-fullUser();
+
+function showdiv() {
+
+    document.getElementById('divId').style.visibility = 'visible';
+
+
+}
+
