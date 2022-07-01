@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product App</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./customer.css" />
+    <link rel="stylesheet" href="../../style/style.css" />
+
+  </head>
+
+  <body>
+      <!--Header Start-->
+      <header class="header" id="header">
+          <div class="container">
+              <!--logo-->
+              <div class="logo">
+                 <a href="index.html">
+                      <img src="../../pics/logo3.png" alt="logo-Bookkeeping-app">
+                 </a>
+              </div>
+  
+              <!--Navbar-->
+              <nav class="navbar">
+                  <ul class="nav-list">
+                      <li>
+                          <a href="login.html"><i class='bx bx-log-in'></i>login</a>
+                      </li>
+  
+                      <li>
+                          <a href="login.html"><i class='bx bx-user-circle'></i>sign up</a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+      <!--/.Header End-->
+
+
+       <!--Page Content Start-->
+    <main class="all-customer">
+      <div class="all-customer-title">
+          <h1>All Customers</h1>
+      </div>
+
+      <!--Customer Forms-->
+      <div class="customer-form">
+        <form id="formEmployee">
+          <input type="text" id="employeeId" placeholder="Enter Employee Id  ..." maxlength="9" required>
+          <input type="text" id="employeeName" placeholder="Enter Employee Name ..." required>
+          <input type="text" id="employeeSalary" placeholder="Enter Employee Salary  ..." required>
+      
+          <div class="">
+              <input type="submit" id="submit" value="Save">
+              <input type="hidden" id="contIdEidt">
+          </div>
+      
+        </form>
+    </div>
+    <div>
+
+      <!--Customer Table-->
+      <div class="all-customer-table">
+        <table id="tableEmployee">
+            <thead>
+                <tr>
+                    <th>Employee Id</th>
+                    <th>Employee Name</th>
+                    <th>Employee Salary</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+    
+            </tbody>
+        </table>
+      </div> 
+
+  </main>
+  <!--/.Page Content End-->
+
+  <footer class="footer">
+      <p>@Copyright By Hyper-Text 2022</p>
+  </footer>
+  
+      <script src="./customer.js"></script>
+  </body>
+</html>
