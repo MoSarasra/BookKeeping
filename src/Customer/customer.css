@@ -1,0 +1,66 @@
+/*All Customer*/
+.all-customer .all-customer-title{
+    padding: 20px;
+    text-align: center;
+}
+.all-customer table {
+    width: 80vw;
+    margin-top: 20px;
+    border: 1px solid #8AABCA;
+    border-collapse: collapse;
+}
+
+.all-customer  table tr th {
+    font-size: 18px;
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    background-color:#8AABCA;
+}
+  
+.all-customer tr td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+}
+
+.all-customer  .delete{
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 6px;
+    border: none;
+    background-color: #FF5757;
+}
+
+
+
+.all-customer .all-customer-table,
+.customer-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.all-customer input{
+   font-size: 18px;
+   padding: 10px 20px;
+   border-radius: 4px;
+   margin: 10px;
+   border: 2px solid #8AABCA;
+}
+
+.all-customer .add-btn{
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px;
+    border: 2px solid #8AABCA;
+    background-color: #8AABCA;
+}
+
+
+  @media screen and (max-width:1000px) {
+    .customer-form{
+        flex-direction: column !important;
+    }
+  }
