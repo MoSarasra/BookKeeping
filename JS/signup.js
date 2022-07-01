@@ -16,6 +16,7 @@ function submitForm() {
         BusinessName: BusinessName,
         country: countryOptions,
         currency: currencyOptions,
+
         
     }
 
