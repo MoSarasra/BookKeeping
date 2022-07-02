@@ -7,7 +7,7 @@
     <title>Bookkeeping App</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./employee.css" />
+    <link rel="stylesheet" href="./payment.css" />
     <link rel="stylesheet" href="../../style/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -44,14 +44,15 @@
        <!--Page Content Start-->
     <main class="all-employee">
       <div class="all-employee-title">
-          <h1>All Employee</h1>
+          <h1> Payment</h1>
       </div>
 
       <!--Customer Forms-->
       <div class="customer-form">
-        <form id="formEmployee">
-          <input type="text" id="employeeId" placeholder="Enter Employee Id  ..." required maxlength="9">
-          <input type="text" id="employeeName" placeholder="Enter Employee Name ..." required>
+        <form id="formPayment">
+          <input type="text" id="paymentId" placeholder="Enter Employee Id  ..." required maxlength="9">
+          <input type="date" id="datePayment">
+          <input type="text" id="employeeName" placeholder="Enter Amount ..." required>
           <div class="">
               <input type="submit" id="submit" value="Save">
           </div>
@@ -62,11 +63,12 @@
 
       <!--Customer Table-->
       <div class="all-employee-table">
-        <table id="tableEmployee">
+        <table id="tablePayment">
             <thead>
                 <tr>
                     <th>Employee Id</th>
-                    <th>Employee Name</th>
+                    <th>Amount</th>
+                    <th>Date</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -84,6 +86,6 @@
       <p>@Copyright By Hyper-Text 2022</p>
   </footer>
   
-      <script src="./employee.js"></script>
+      <script src="./payment.js"></script>
   </body>
 </html>

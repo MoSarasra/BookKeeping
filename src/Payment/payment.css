@@ -1,0 +1,87 @@
+/*All Customer*/
+.all-employee .all-employee-title{
+    padding: 20px;
+    text-align: center;
+}
+
+input:focus{
+    outline: none !important;
+}
+
+.all-employee table {
+    width: 80vw;
+    margin-top: 20px;
+    border: 1px solid #8AABCA;
+    border-collapse: collapse;
+}
+
+.all-employee  table tr th{
+    font-size: 18px;
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    background-color:#8AABCA;
+}
+  
+.all-employee tr td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+}
+
+.all-employee  .delete{
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 6px;
+    border: none;
+    background-color: #FF5757;
+}
+
+
+
+.all-employee .all-employee-table,
+.customer-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.customer-form input{
+   font-size: 18px;
+   padding: 10px 20px;
+   border-radius: 4px;
+   margin: 10px;
+   border: 2px solid #8AABCA;
+}
+
+.all-employee #formEmployee{
+    display: flex;
+}
+
+.all-employee .add-btn{
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px;
+    border: 2px solid #8AABCA;
+    background-color: #8AABCA;
+}
+
+
+@media screen and (max-width:1000px) {
+    body{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .customer-form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+    .all-employee #formEmployee{
+        flex-direction: column;
+    }
+}
