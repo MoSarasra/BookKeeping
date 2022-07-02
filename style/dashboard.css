@@ -123,3 +123,40 @@ a {
     background-color: #8AABCA;
 }
 
+.welcomeUser {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+
+}
+
+.buttonSection {
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+
+
+}
+
+b {
+    color: rgb(57, 57, 57);
+   
+}
+
+.sectionq {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
+
+  }
+  
+  .button {
+    width: 130px;
+    height: 70px;
+    border: 1px solid rgb(181, 169, 255);
+    color:#8AABCA;
+    margin: 25px;
+    border-radius: 1em;
+    color: #222;
+  }
