@@ -7,7 +7,7 @@
     <title>Bookkeeping App</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./customer.css" />
+    <link rel="stylesheet" href="./employee.css" />
     <link rel="stylesheet" href="../../style/style.css" />
 
   </head>
@@ -41,16 +41,16 @@
 
 
        <!--Page Content Start-->
-    <main class="all-customer">
-      <div class="all-customer-title">
-          <h1>All Customers</h1>
+    <main class="all-employee">
+      <div class="all-employee-title">
+          <h1>All Employee</h1>
       </div>
 
       <!--Customer Forms-->
       <div class="customer-form">
-        <form id="formCustomer">
-          <input type="text" id="customerId" placeholder="Enter Customer Id  ..." required maxlength="9">
-          <input type="text" id="customerName" placeholder="Enter Customer Name ..." required >
+        <form id="formEmployee">
+          <input type="text" id="employeeId" placeholder="Enter Employee Id  ..." required maxlength="9">
+          <input type="text" id="employeeName" placeholder="Enter Employee Name ..." required>
           <div class="">
               <input type="submit" id="submit" value="Save">
           </div>
@@ -60,12 +60,12 @@
     <div>
 
       <!--Customer Table-->
-      <div class="all-customer-table">
-        <table id="tableCustomer">
+      <div class="all-employee-table">
+        <table id="tableEmployee">
             <thead>
                 <tr>
-                    <th>Customer Id</th>
-                    <th>Customer Name</th>
+                    <th>Employee Id</th>
+                    <th>Employee Name</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -83,6 +83,6 @@
       <p>@Copyright By Hyper-Text 2022</p>
   </footer>
   
-      <script src="./customer.js"></script>
+      <script src="./employee.js"></script>
   </body>
 </html>

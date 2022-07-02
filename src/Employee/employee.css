@@ -1,5 +1,5 @@
 /*All Customer*/
-.all-customer .all-customer-title{
+.all-employee .all-employee-title{
     padding: 20px;
     text-align: center;
 }
@@ -8,27 +8,27 @@ input:focus{
     outline: none !important;
 }
 
-.all-customer table {
+.all-employee table {
     width: 80vw;
     margin-top: 20px;
     border: 1px solid #8AABCA;
     border-collapse: collapse;
 }
 
-.all-customer  table tr th{
+.all-employee  table tr th{
     font-size: 18px;
     padding: 12px;
     border: 1px solid #eeeeee;
     background-color:#8AABCA;
 }
   
-.all-customer tr td {
+.all-employee tr td {
     padding: 10px;
     text-align: center;
     border: 1px solid #eeeeee;
 }
 
-.all-customer  .delete{
+.all-employee  .delete{
     padding: 5px 10px;
     color: #fff;
     font-size: 22px;
@@ -39,7 +39,7 @@ input:focus{
 
 
 
-.all-customer .all-customer-table,
+.all-employee .all-employee-table,
 .customer-form{
     width: 100%;
     display: flex;
@@ -54,11 +54,12 @@ input:focus{
    margin: 10px;
    border: 2px solid #8AABCA;
 }
-.all-customer #formCustomer{
+
+.all-employee #formEmployee{
     display: flex;
 }
 
-.all-customer .add-btn{
+.all-employee .add-btn{
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 4px;
@@ -80,7 +81,7 @@ input:focus{
         justify-content: center !important;
         flex-direction: column !important;
     }
-    .all-customer #formCustomer{
+    .all-employee #formEmployee{
         flex-direction: column;
     }
 }
