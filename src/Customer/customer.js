@@ -1,75 +1,71 @@
-let formEmployee = document.getElementById('formEmployee');
-let employeeId = document.getElementById('employeeId');
-let employeeName = document.getElementById('employeeName');
-let employeeSalary = document.getElementById('employeeSalary');
-let tableEmployee = document.querySelector('#tableEmployee tbody');
+let formCustomer= document.getElementById('formCustomer');
+let customerId = document.getElementById('customerId');
+let customerName = document.getElementById('customerName');
+let tableCustomer = document.querySelector('#tableCustomer tbody');
 
-class Employee{
-    constructor(id ,name ,salary){
+class Customer{
+    constructor(id ,name ){
         this.id = id;
         this.name = name;
-        this.salary = salary;
     }
-    static createNewRow(id, name, salary){
+    static createNewRow(id, name){
         //init tr
-        const trEmployee = document.createElement("tr");
-        trEmployee.innerHTML = `
+        const trCustomer = document.createElement("tr");
+        trCustomer.innerHTML = `
         <tr>
             <td> ${id}</td>
             <td> ${name} </td>
-            <td> ${salary} </td>
             <td> <button class="delete" data-id="${id}">x</button></td>
         </tr>`
 
-        tableEmployee.appendChild(trEmployee);
+        tableCustomer.appendChild(trCustomer);
     }
 
     showData(){
-        Employee.createNewRow(this.id, this.name, this.salary);
+        Customer.createNewRow(this.id, this.name);
         return this
     }
 
     storeEmployee(){
-       const allEmployee = JSON.parse(localStorage.getItem("employees") ) ?? [];
-       allEmployee.push({id:this.id,name:this.name,salary:this.salary});
-       localStorage.setItem("employees",JSON.stringify(allEmployee));
+       const allCustomer = JSON.parse(localStorage.getItem("customers") ) ?? [];
+       allCustomer.push({id:this.id,name:this.name});
+       localStorage.setItem("customers",JSON.stringify(allCustomer));
     }
 
     static showAllEmployee(){
-        if(localStorage.getItem("employees")){
-            JSON.parse(localStorage.getItem("employees")).forEach((item) => {
-                Employee.createNewRow(item.id, item.name, item.salary);
+        if(localStorage.getItem("customers")){
+            JSON.parse(localStorage.getItem("customers")).forEach((item) => {
+                Customer.createNewRow(item.id, item.name);
             })
         }
     }
 }
 
-Employee.showAllEmployee();
+Customer.showAllEmployee();
 
-formEmployee.addEventListener("submit" , (e) => {
+formCustomer.addEventListener("submit" , (e) => {
     // stop reloaded page
     e.preventDefault();
 
     //init instants on Employee
-    const newEmployee = new Employee(employeeId.value ,employeeName.value ,employeeSalary.value);
+    const newCustomer = new Customer(customerId.value ,customerName.value);
 
-    newEmployee.showData().storeEmployee();
+    newCustomer.showData().storeEmployee();
     //remove data from input
-    employeeId.value = '';
-    employeeName.value = '';
-    employeeSalary.value ='';
-})
+    customerId.value = '';
+    customerName.value = '';
+});
 
 
-tableEmployee.addEventListener("click", (e) => {
+tableCustomer.addEventListener("click", (e) => {
     //remove localStorage
     if(+e.target.classList.contains("delete")){
         const DataId = e.target.getAttribute("data-id");
-        const reEmployees = JSON.parse(localStorage.getItem("employees"));
-        const filterEmployees = reEmployees.filter(item => item.id !== DataId);
-        localStorage.setItem("employees" , JSON.stringify(filterEmployees));
+        const reCustomer = JSON.parse(localStorage.getItem("customers"));
+        const filterEmployees = reCustomer.filter(item => item.id !== DataId);
+        localStorage.setItem("customers" , JSON.stringify(filterEmployees));
 
-        alert("Are You Sure To Delete This !")
+        alert("Are You Sure To Delete This !");
 
         //first parent=> tr ,second parent=> td 
         //remove of html
