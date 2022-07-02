@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../style/login.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="../style/login.css" />
+  </head>
 
-<body>
+  <body>
     <!--Header Start-->
     <header class="header" id="header">
-        <div class="container">
-            <!--logo-->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="../pics/logo4.png" alt="logo-Bookkeeping-app">
-                </a>
-            </div>
-
-            <i color="black">Bookkeeping</i>
-            <!--Navbar-->
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li>
-                        <a href="welcome.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="login.html">login</a>
-                    </li>
-
-                    <li>
-                        <a href="signup.html">sign up</a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">Contact us</a>
-                    </li>
-
-                </ul>
-            </nav>
+      <div class="container">
+        <!--logo-->
+        <div class="logo">
+          <a href="index.html">
+            <img src="../pics/logo4.png" alt="logo-Bookkeeping-app" />
+          </a>
         </div>
+
+        <i color="black">Bookkeeping</i>
+        <!--Navbar-->
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li>
+              <a href="welcome.html">Home</a>
+            </li>
+
+            <li>
+              <a href="login.html">login</a>
+            </li>
+
+            <li>
+              <a href="signup.html">sign up</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!--/.Header End-->
 
     <div class="content" class="login">
-        <div class="login">
-            <div class="login-screen">
-                <div class="app-title">
-                    <h1>Login <img src="../pics/login-icon.png"></h1>
-                </div>
+      <div class="login">
+        <div class="login-screen">
+          <div class="app-title">
+            <h1>Login <img src="../pics/login-icon.png" /></h1>
+          </div>
 
+          <form
+            action=""
+            method="post"
+            name="form"
+            onsubmit="return validated()"
+          >
+            <div class="login-form">
+              <div class="control-group">
+                <input
+                  type="email"
+                  class="login-field"
+                  value=""
+                  placeholder="email"
+                  id="login-name"
+                  name="email"
+                />
+                <label></label>
+              </div>
 
+              <div class="control-group">
+                <input
+                  type="password"
+                  class="login-field"
+                  value=""
+                  placeholder="password"
+                  id="login-pass"
+                  name="password"
+                />
+                <label></label>
+              </div>
 
-                <form action='' method="post" name = "form" onsubmit="return validated()">
-
-                    <div class="login-form">
-                        <div class="control-group">
-                            <input type="email" class="login-field" value="" placeholder="email" id="login-name"
-                                name="email">
-                            <label></label>
-                        </div>
-
-                        <div class="control-group">
-                            <input type="password" class="login-field" value="" placeholder="password" id="login-pass"
-                                name="password">
-                            <label></label>
-                        </div>
-
-                        <input type="submit" name="login" value="Login" class="btn btn-primary btn-large btn-block">
-                        <a class="login-link" href="">Lost your password?</a>
-                    </div>
-
-                </form>
+              <input
+                type="submit"
+                name="login"
+                value="Login"
+                class="btn btn-primary btn-large btn-block"
+              />
+              <a class="login-link" href="">Lost your password?</a>
             </div>
-
+          </form>
         </div>
+      </div>
     </div>
 
     <!--/.Page Content End-->
-<script src="../js/login.js"></script>
+    <script src="../js/login.js"></script>
     <footer class="footer">
-        <p>@Copyright By Hyper-Text 2022</p>
+      <p>@Copyright By Hyper-Text 2022</p>
     </footer>
-
-</body>
-
+  </body>
 </html>

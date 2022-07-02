@@ -9,7 +9,10 @@ function submitForm() {
     let countryOptions = country.options[country.selectedIndex].value;
     const currency = signUpForm['currency'];
     let currencyOptions = currency.options[currency.selectedIndex].value;
-
+     if(password.length < 6){
+        alert('password must be at least 6 chars');
+        return false;
+     }
     let newUser = {
         userName: userName,
         email: email,
