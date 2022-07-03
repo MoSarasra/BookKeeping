@@ -29,9 +29,12 @@ function fullUser() {
 fullUser();
 
 function showdiv() {
-
+    document.getElementById('dash').style.visibility = 'hidden';
     document.getElementById('divId').style.visibility = 'visible';
+}
 
-
+function showdashdiv(){
+    document.getElementById('divId').style.visibility = 'hidden';
+    document.getElementById('dash').style.visibility = 'visible';
 }
 
