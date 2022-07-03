@@ -28,8 +28,15 @@ class Customer{
 
     storeEmployee(){
        const allCustomer = JSON.parse(localStorage.getItem("customers") ) ?? [];
-       allCustomer.push({id:this.id,name:this.name});
-       localStorage.setItem("customers",JSON.stringify(allCustomer));
+       if (allCustomer.some((e) => e.id == customerId.value)) {
+        alert("this Id is already exits, please try another one");
+        location.reload();
+      } else {
+         alert('customer added!')
+        allCustomer.push({id:this.id,name:this.name});
+        localStorage.setItem("customers",JSON.stringify(allCustomer));
+      }
+     
     }
 
     static showAllEmployee(){

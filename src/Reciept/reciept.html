@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookkeeping App</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./reciept.css" />
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+      <!--Header Start-->
+      <header class="header" id="header">
+          <div class="container">
+              <!--logo-->
+              <div class="logo">
+                 <a href="index.html">
+                      <img src="../../pics/logo3.png" alt="logo-Bookkeeping-app">
+                 </a>
+              </div>
+  
+              <!--Navbar-->
+              <nav class="navbar">
+                  <ul class="nav-list">
+                      <li>
+                          <a href="login.html"><i class='bx bx-log-in'></i>login</a>
+                      </li>
+  
+                      <li>
+                          <a href="login.html"><i class='bx bx-user-circle'></i>sign up</a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+      <!--/.Header End-->
+
+
+       <!--Page Content Start-->
+    <main class="all-customers">
+      <div class="all-customers-title">
+          <h1> Reciept </h1>
+      </div>
+
+      <!--Customer Forms-->
+      <div class="customer-form">
+        <form id="formReciept">
+          <input type="text" id="recieptId" placeholder="Enter Customer Id  ..." required maxlength="9">
+          <input type="date" id="dateReciept">
+          <input type="text" id="customerName" placeholder="Enter Amount ..." required>
+          <div class="">
+              <input type="submit" id="submit" value="Save">
+          </div>
+      
+        </form>
+    </div>
+    <div>
+
+      <!--Customer Table-->
+      <div class="all-customers-table">
+        <table id="tableCustomers">
+            <thead>
+                <tr>
+                    <th>customer Id</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+    
+            </tbody>
+        </table>
+      </div> 
+
+  </main>
+  <!--/.Page Content End-->
+
+  <footer class="footer">
+      <p>@Copyright By Hyper-Text 2022</p>
+  </footer>
+  
+      <script src="./reciept.js"></script>
+  </body>
+</html>
