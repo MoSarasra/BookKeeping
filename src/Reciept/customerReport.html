@@ -7,7 +7,7 @@
     <title>Bookkeeping App</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./reciept.css" />
+    <link rel="stylesheet" href="./customerReport.css" />
     <link rel="stylesheet" href="../../style/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -49,10 +49,11 @@
 
       <!--Customer Forms-->
       <div class="customer-form">
-        <form id="formReciept">
-          <input type="text" id="recieptId" placeholder="Enter Customer Id  ..." required maxlength="9">
-          <input type="date" id="dateReciept">
-          <input type="text" id="amount" placeholder="Enter Amount ..." required>
+        <form id="formRecieptReport" method="post" onsubmit="return getCustomerReport()">
+          <h3 style="margin-top: 20px;">select a range plaese</h3>
+          <input type="date" id="beginningDateReciept">
+          <input type="date" id="endDateReciept">
+          
           <div class="">
               <input type="submit" id="submit" value="Save">
           </div>
@@ -69,7 +70,6 @@
                     <th>customer Id</th>
                     <th>Amount</th>
                     <th>Date</th>
-                    <th>Action</th>
                 </tr>
             </thead>
     
@@ -86,6 +86,6 @@
       <p>@Copyright By Hyper-Text 2022</p>
   </footer>
   
-      <script src="./reciept.js"></script>
+      <script src="./customerReport.js"></script>
   </body>
 </html>

@@ -1,22 +1,26 @@
 let formReciept = document.getElementById('formReciept');
 let RecieptId = document.getElementById('recieptId');
-let customerName = document.getElementById('customerName');
+let amount = document.getElementById('amount');
 let timeReciept = document.getElementById('dateReciept');
 let tableReciept = document.querySelector('#tableCustomers tbody');
 
+
+
 class Reciept{
-    constructor(id ,name ,time){
+    constructor(id ,amount ,time){
         this.id = id;
-        this.name = name;
+        this.amount = amount;
         this.time = time;
     }
-    static createNewRow(id, name ,time){
+
+
+    static createNewRow(id, amount ,time){
         //init tr
         const trReciept = document.createElement("tr");
         trReciept.innerHTML = `
         <tr>
             <td> ${id}</td>
-            <td> ${name} </td>
+            <td> ${amount} </td>
             <td> ${time} </td>
             <td> <button class="delete" data-id="${id}">x</button></td>
         </tr>`
@@ -25,20 +29,38 @@ class Reciept{
     }
 
     showData(){
-        Reciept.createNewRow(this.id, this.name, this.time);
+        Reciept.createNewRow(this.id, this.amount, this.time);
         return this
     }
 
     storeReciept(){
        const allReciept = JSON.parse(localStorage.getItem("Reciept") ) ?? [];
-       allReciept.push({id:this.id,name:this.name, time:this.time});
-       localStorage.setItem("Reciept",JSON.stringify(allReciept));
+       const allCustomer = JSON.parse(localStorage.getItem("customers") ) ?? [];
+
+       if (allCustomer.some((e) => e.id != RecieptId.value)) {
+       alert('id is not exist! add a user then try again');
+       location.reload();
+      } 
+      else if(typeof parseInt(amount.value) != "number"){
+          alert('amount must be a number, try again');
+          location.reload();
+      }
+      
+      else {
+          alert('record added');
+         allReciept.push({id:this.id,amount:this.amount, time:this.time});
+         localStorage.setItem("Reciept",JSON.stringify(allReciept));
+      }
+
+
+
+
     }
 
     static showAllReciept(){
         if(localStorage.getItem("Reciept")){
             JSON.parse(localStorage.getItem("Reciept")).forEach((item) => {
-                Reciept.createNewRow(item.id, item.name, item.time);
+                Reciept.createNewRow(item.id, item.amount, item.time);
             })
         }
     }
@@ -51,12 +73,12 @@ formReciept.addEventListener("submit" , (e) => {
     e.preventDefault();
 
     //init instants on Payment
-    const newReciept = new Reciept(RecieptId.value ,customerName.value ,timeReciept.value);
+    const newReciept = new Reciept(RecieptId.value ,amount.value ,timeReciept.value);
 
     newReciept.showData().storeReciept();
     //remove data from input
     RecieptId.value = '';
-    customerName.value = '';
+    amount.value = '';
     timeReciept.value = '';
 });
 
