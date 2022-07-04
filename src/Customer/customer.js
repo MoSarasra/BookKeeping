@@ -32,7 +32,7 @@ class Customer{
         alert("this Id is already exits, please try another one");
         location.reload();
       } 
-      else if(typeof customerId.value != 'number'){
+      else if(isNaN(customerId.value)){
           alert('customer id must be a number, try again');
           location.reload();
       }

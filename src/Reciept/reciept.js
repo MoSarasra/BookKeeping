@@ -34,14 +34,13 @@ class Reciept{
     }
 
     storeReciept(){
+        const allCustomer = JSON.parse(localStorage.getItem("customers") ) ?? [];
        const allReciept = JSON.parse(localStorage.getItem("Reciept") ) ?? [];
-       const allCustomer = JSON.parse(localStorage.getItem("customers") ) ?? [];
-
-       if (allCustomer.some((e) => e.id != RecieptId.value)) {
-       alert('id is not exist! add a user then try again');
-       location.reload();
-      } 
-      else if(typeof parseInt(amount.value) != "number"){
+    //    if (allCustomer.some((e) => e.id == RecieptId.value )) {
+    //    alert('id is not exist! add a user then try again');
+    //    location.reload();
+    //   } 
+       if(isNaN(amount.value)){
           alert('amount must be a number, try again');
           location.reload();
       }
