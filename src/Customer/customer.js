@@ -25,9 +25,9 @@ class Customer{
         Customer.createNewRow(this.id, this.name);
         return this
     }
-
+customers
     storeEmployee(){
-       const allCustomer = JSON.parse(localStorage.getItem("customers") ) ?? [];
+       const allCustomer = JSON.parse(localStorage.getItem("") ) ?? [];
        allCustomer.push({id:this.id,name:this.name});
        localStorage.setItem("customers",JSON.stringify(allCustomer));
     }

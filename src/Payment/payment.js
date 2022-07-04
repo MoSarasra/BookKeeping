@@ -1,22 +1,22 @@
 let formPayment = document.getElementById('formPayment');
 let paymentId = document.getElementById('paymentId');
-let employeeName = document.getElementById('employeeName');
+let employeeAmount = document.getElementById('employeeAmount');
 let timePayment = document.getElementById('datePayment');
 let tablePayment = document.querySelector('#tablePayment tbody');
 
 class Payment{
-    constructor(id ,name ,time){
+    constructor(id ,amount ,time){
         this.id = id;
-        this.name = name;
+        this.amount = amount;
         this.time = time;
     }
-    static createNewRow(id, name ,time){
+    static createNewRow(id, amount ,time){
         //init tr
         const trPayment = document.createElement("tr");
         trPayment.innerHTML = `
         <tr>
             <td> ${id}</td>
-            <td> ${name} </td>
+            <td> ${amount} </td>
             <td> ${time} </td>
             <td> <button class="delete" data-id="${id}">x</button></td>
         </tr>`
@@ -25,20 +25,20 @@ class Payment{
     }
 
     showData(){
-        Payment.createNewRow(this.id, this.name, this.time);
+        Payment.createNewRow(this.id, this.amount, this.time);
         return this
     }
 
     storePayment(){
        const allPayment = JSON.parse(localStorage.getItem("payments") ) ?? [];
-       allPayment.push({id:this.id,name:this.name, time:this.time});
+       allPayment.push({id:this.id,amount:this.amount, time:this.time});
        localStorage.setItem("payments",JSON.stringify(allPayment));
     }
 
     static showAllPayment(){
         if(localStorage.getItem("payments")){
             JSON.parse(localStorage.getItem("payments")).forEach((item) => {
-                Payment.createNewRow(item.id, item.name, item.time);
+                Payment.createNewRow(item.id, item.amount, item.time);
             })
         }
     }
@@ -51,12 +51,12 @@ formPayment.addEventListener("submit" , (e) => {
     e.preventDefault();
 
     //init instants on Payment
-    const newPayment = new Payment(paymentId.value ,employeeName.value ,timePayment.value);
+    const newPayment = new Payment(paymentId.value ,employeeAmount.value ,timePayment.value);
 
     newPayment.showData().storePayment();
     //remove data from input
     paymentId.value = '';
-    employeeName.value = '';
+    employeeAmount.value = '';
     timePayment.value = '';
 });
 
@@ -76,3 +76,5 @@ tablePayment.addEventListener("click", (e) => {
         e.target.parentElement.parentElement.remove();
     }
 })
+
+export default Payment;
