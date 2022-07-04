@@ -36,23 +36,23 @@ class Reciept{
     storeReciept(){
         const allCustomer = JSON.parse(localStorage.getItem("customers") ) ?? [];
        const allReciept = JSON.parse(localStorage.getItem("Reciept") ) ?? [];
-    //    if (allCustomer.some((e) => e.id == RecieptId.value )) {
-    //    alert('id is not exist! add a user then try again');
-    //    location.reload();
-    //   } 
-       if(isNaN(amount.value)){
-          alert('amount must be a number, try again');
-          location.reload();
-      }
-      
-      else {
-          alert('record added');
-         allReciept.push({id:this.id,amount:this.amount, time:this.time});
-         localStorage.setItem("Reciept",JSON.stringify(allReciept));
-      }
-
-
-
+       if (allCustomer.some((e) => e.id == RecieptId.value )) {
+        if(isNaN(amount.value)){
+            alert('amount must be a number, try again');
+            location.reload();
+        }
+        
+        else {
+            alert('record added');
+           allReciept.push({id:this.id,amount:this.amount, time:this.time});
+           localStorage.setItem("Reciept",JSON.stringify(allReciept));
+        }
+      } 
+    
+else{
+      alert('id is not exist! add a user then try again');
+      location.reload();
+}
 
     }
 
