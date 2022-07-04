@@ -26,12 +26,18 @@ class Customer{
         return this
     }
 
-    storeEmployee(){
+    storeCustomer(){
        const allCustomer = JSON.parse(localStorage.getItem("customers") ) ?? [];
        if (allCustomer.some((e) => e.id == customerId.value)) {
         alert("this Id is already exits, please try another one");
         location.reload();
-      } else {
+      } 
+      else if(isNaN(customerId.value)){
+          alert('customer id must be a number, try again');
+          location.reload();
+      }
+      
+      else {
          alert('customer added!')
         allCustomer.push({id:this.id,name:this.name});
         localStorage.setItem("customers",JSON.stringify(allCustomer));
@@ -39,7 +45,7 @@ class Customer{
      
     }
 
-    static showAllEmployee(){
+    static showAllCustomer(){
         if(localStorage.getItem("customers")){
             JSON.parse(localStorage.getItem("customers")).forEach((item) => {
                 Customer.createNewRow(item.id, item.name);
@@ -48,7 +54,7 @@ class Customer{
     }
 }
 
-Customer.showAllEmployee();
+Customer.showAllCustomer();
 
 formCustomer.addEventListener("submit" , (e) => {
     // stop reloaded page
@@ -57,7 +63,7 @@ formCustomer.addEventListener("submit" , (e) => {
     //init instants on Employee
     const newCustomer = new Customer(customerId.value ,customerName.value);
 
-    newCustomer.showData().storeEmployee();
+    newCustomer.showData().storeCustomer();
     //remove data from input
     customerId.value = '';
     customerName.value = '';
@@ -69,8 +75,8 @@ tableCustomer.addEventListener("click", (e) => {
     if(+e.target.classList.contains("delete")){
         const DataId = e.target.getAttribute("data-id");
         const reCustomer = JSON.parse(localStorage.getItem("customers"));
-        const filterEmployees = reCustomer.filter(item => item.id !== DataId);
-        localStorage.setItem("customers" , JSON.stringify(filterEmployees));
+        const filterCustomers = reCustomer.filter(item => item.id !== DataId);
+        localStorage.setItem("customers" , JSON.stringify(filterCustomers));
 
         alert("Are You Sure To Delete This !");
 
