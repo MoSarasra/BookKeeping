@@ -26,7 +26,7 @@
                     </li>
 
                     <li id='userNameHtml'>
-                        <a href="#" id="username">  </a>
+                        <a href="#" id="username"> </a>
                     </li>
                     <li>
                         <a href="#">Logout</a>
@@ -45,33 +45,30 @@
     <div class="content">
         <div class="welcomeUser">
             <div>
-                <h2 id = 'name'> </h2>
+                <h2 id='name'> </h2>
             </div>
 
             <h4><img src='../pics/signup.png'>&nbsp Adding another user to <b>Book_keeping App</b></h4>
-            <button class='btnt btn-primary btn-large btn-block' type='button' onclick="showdiv()"> Add User </button><br><br><br>
+            <button class='btnt btn-primary btn-large btn-block' type='button' onclick="showdiv()"> Add User
+            </button><br><br><br>
             <h4><img src='../pics/dash.png'>&nbsp To save your time and improve your decision making</h4>
-            <button class='btnt btn-primary btn-large btn-block' type='button' onclick="showdashdiv()"> Dashboard </button> 
+            <button class='btnt btn-primary btn-large btn-block' type='button' onclick="showdashdiv()"> Dashboard
+            </button>
 
         </div>
-        <div class="adduserOpt" id="divId">
+       <div class="adduserOpt" id="divId">
             <div class="signup ">
                 <div class="signup-screen">
                     <div class="app-title">
-                        <h1> SignUp <img src="../pics/signup.png"></h1>
+                        <h1> Add User <img src="../pics/signup.png"></h1>
                     </div>
 
-                    <form id='signup' action=''>
+                    <form id='signupPlus' action=''>
 
                         <div class="signup-form">
                             <div class="control-group">
                                 <label>Username </label>
-                                <input type="string" id="username" name="username" required>
-                            </div>
-
-                            <div class="control-group">
-                                <label>Email &nbsp &nbsp &nbsp </label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="string" id="usernamePlus" name="username" required>
                             </div>
 
                             <div class="control-group">
@@ -79,36 +76,8 @@
                                 <input type="password" id="password" name="password" required>
                             </div>
 
-                            <div class="control-group">
-                                <label>BusinessName</label>
-                                <input type="string" id="BusinessName" name="BusinessName" required>
-                            </div>
-
-                            <div class="control-group select">
-                                <label>Country</label>
-                                <select id='country' name="country">
-                                    <option value="palestine ">Palestine</option>
-                                    <option value="Jordan">Jordan</option>
-                                    <option value="Lebanon">Lebanon</option>
-                                    <option value="Syria">Syria</option>
-                                    <option value="Egypt">Egypt</option>
-                                    <option value="Iraq">Iraq</option>
-                                </select>
-                            </div>
-
-                            <div class="control-group select">
-                                <label>Currency</label>
-                                <select id="currency" name="currency">
-                                    <option value="Dollar ">Dollar</option>
-                                    <option value="Euro">Euro</option>
-                                    <option value="Dinar">Dinar</option>
-                                    <option value="shekel ">shekel </option>
-                                </select>
-                            </div>
-
-
                             <input type="submit" name="submit" id='submit' value="Submit"
-                                class="btn btn-primary btn-large btn-block" onclick="submitForm()">
+                                class="btn btn-primary btn-large btn-block" onclick="allFunOnClick();">
 
                             <a class="signup-link" href="login.html">Back to Login page</a>
                         </div>
@@ -118,7 +87,7 @@
 
             </div>
 
-            <div class="dash" id = 'dash'>
+            <div class="dash" id='dash'>
                 <div class="dashb">
                     <h2> User Dashboard</h2>
                     <h5>Access and monitor all various sections in your application</h5>
@@ -127,11 +96,19 @@
                         <button class="button">Customer Section </button>
                         <button class="button">Payments Section </button>
                         <button class="button">Receipt Section</button>
+                        <button class="button">Report Section</button>
+
                     </div>
                 </div>
 
             </div>
-            
+
+            <div class = 'Hello-user' id = 'Hello-userq'>
+                <h1>Welcome!</h1>
+                <h2 id="hello"></h2>
+                <h3> In Bookkeeping Application </h3>
+            </div>
+
 
         </div>
 
@@ -144,6 +121,7 @@
     </footer>
 
     <script src="../js/adduser.js"></script>
+    <script src="../js/adduserplus.js"></script>
     <script src="../js/signup.js"></script>
 
 
