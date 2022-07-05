@@ -30,8 +30,7 @@ function showdiv() {
 
 function showdashdiv(){
     document.getElementById('divId').style.visibility = 'hidden';
+    document.getElementById('Hello-userq').style.visibility = 'hidden';
     document.getElementById('dash').style.visibility = 'visible';
-    document.getElementById('Hello-user').style.visibility = 'hidden';
-
 }
 

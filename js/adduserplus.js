@@ -33,22 +33,19 @@ function fullUserPlus() {
         userNameHello = userInfo.userName;
     }
     console.log(userData1);
+    document.getElementById('Hello-userq').style.visibility = 'visible';
 
     const welcomeName = document.getElementById('hello');
     if (welcomeName) {
         welcomeName.innerText = userData1;
     }
 
-    
-
-    // document.getElementById(userPage).innerHTML = userData;
-    // document.getElementById('userNameHtml').innerHTML = userData;
-
 }
 function showPlus() {
     document.getElementById('Hello-userq').style.visibility = 'visible';
     document.getElementById('dash').style.visibility = 'hidden';
     document.getElementById('divId').style.visibility = 'hidden';
+    
 }
 
 function allFunOnClick() {
@@ -56,5 +53,7 @@ function allFunOnClick() {
     submitFormPlus();
     fullUserPlus();
     showPlus();
+    document.getElementById('Hello-userq').style.visibility = 'visible';
+
 }
 

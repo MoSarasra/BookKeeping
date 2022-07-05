@@ -31,17 +31,4 @@ function submitForm() {
 
 }
 
-// function fullUser() {
-//     let currentUsers = JSON.parse(localStorage.getItem('user')) || [];
-//     for (const userInfo of currentUsers) {
-//         userData = userInfo.userName ;
-//     }
-//     console.log(userData);
-
-//     console.log(document.getElementById(userNameHtml));
-//     // document.getElementById('userNameHtml').innerHTML = userData;
-
-// }
-
-// fullUser();
 

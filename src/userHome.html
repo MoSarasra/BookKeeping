@@ -73,11 +73,12 @@
 
                             <div class="control-group">
                                 <label>Password &nbsp </label>
-                                <input type="password" id="password" name="password" required>
+                                <input type="password" id="password" name="password" required minlength="6">
                             </div>
 
-                            <input type="submit" name="submit" id='submit' value="Submit"
-                                class="btn btn-primary btn-large btn-block" onclick="allFunOnClick();">
+                            <button type="submit" name="submit" id='submit' value="Submit"
+                                class="btn btn-primary btn-large btn-block" onclick="allFunOnClick();">Submit
+                            </button>
 
                             <a class="signup-link" href="login.html">Back to Login page</a>
                         </div>
@@ -122,7 +123,7 @@
 
     <script src="../js/adduser.js"></script>
     <script src="../js/adduserplus.js"></script>
-    <script src="../js/signup.js"></script>
+    <!-- <script src="../js/signup.js"></script> -->
 
 
 </body>
