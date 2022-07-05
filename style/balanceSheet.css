@@ -57,8 +57,15 @@ a {
     color: rgb(58, 56, 56);
 }
 
+.content {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    bottom: 10%;
+    text-align: center;
+    font-size: 18px;
 
-
+}
 
 .header .logo {
     width: 7vw;
@@ -116,23 +123,73 @@ a {
     background-color: #8AABCA;
 }
 
-
-.content {
-    position: absolute;
-    top: 10%;
-    width: 100%;
-    bottom: 10%;
-    text-align: center;
-    font-size: 18px;
-
-
+.welcomeUser {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
 
 }
 
-.info {
-    float: left;
-    padding: 100px;
-    width: 50%;
-    height: 100%;
-    text-align: left;
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #8AABCA;
+}
+
+th {
+    background-color: #8AABCA;
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+.tableSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.styled {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+    width: max-content;
+}
+
+.dateForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+
+}
+.dateStyle{
+    margin-left:  10px;
+}
+
+
+.btn {
+    border: 2px solid transparent;
+    background: #8AABCA;
+    margin-left: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
 }
