@@ -24,7 +24,7 @@ function submitForm() {
 
     localStorage.setItem('user', JSON.stringify(currentUser));
 
-   
+
 
     let userAdd = document.getElementById('signup');
     userAdd.setAttribute('action', '../src/userHome.html');

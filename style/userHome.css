@@ -286,20 +286,20 @@ input:focus {
     font-size: 16px;
 }
 
-.adduserOpt .Hello-user{
-  
+.adduserOpt .Hello-user {
+
     background-color: rgb(234, 233, 233);
     width: 450px;
     height: 300px;
     justify-content: center;
-    margin:30px;
+    margin: 30px;
     padding: 20px;
     border-radius: 3em;
     position: absolute;
     top: 20px;
     margin: 80px auto;
     margin-left: 120px;
-    
-   
-   
+
+
+
 }

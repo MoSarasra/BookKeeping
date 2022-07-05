@@ -140,7 +140,7 @@ a {
 
 b {
     color: rgb(57, 57, 57);
-   
+
 }
 
 .sectionq {
@@ -149,14 +149,14 @@ b {
     flex-wrap: wrap;
     padding-left: 10%;
 
-  }
-  
-  .button {
+}
+
+.button {
     width: 130px;
     height: 70px;
     border: 1px solid rgb(181, 169, 255);
-    color:#8AABCA;
+    color: #8AABCA;
     margin: 25px;
     border-radius: 1em;
     color: #222;
-  }
+}

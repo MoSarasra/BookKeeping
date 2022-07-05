@@ -45,11 +45,11 @@ function showPlus() {
     document.getElementById('Hello-userq').style.visibility = 'visible';
     document.getElementById('dash').style.visibility = 'hidden';
     document.getElementById('divId').style.visibility = 'hidden';
-    
+
 }
 
 function allFunOnClick() {
-    
+
     submitFormPlus();
     fullUserPlus();
     showPlus();
