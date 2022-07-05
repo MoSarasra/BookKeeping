@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,81 +12,78 @@
     <link rel="stylesheet" href="../../style/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  </head>
+</head>
 
-  <body>
-      <!--Header Start-->
-      <header class="header" id="header">
-          <div class="container">
-              <!--logo-->
-              <div class="logo">
-                 <a href="index.html">
-                      <img src="../../pics/logo3.png" alt="logo-Bookkeeping-app">
-                 </a>
-              </div>
-  
-              <!--Navbar-->
-              <nav class="navbar">
-                  <ul class="nav-list">
-                      <li>
-                          <a href="login.html"><i class='bx bx-log-in'></i>login</a>
-                      </li>
-  
-                      <li>
-                          <a href="login.html"><i class='bx bx-user-circle'></i>sign up</a>
-                      </li>
-                  </ul>
-              </nav>
-          </div>
-      </header>
-      <!--/.Header End-->
+<body>
+    <!--Header Start-->
+    <header class="header" id="header">
+        <div class="container">
+            <!--logo-->
+            <div class="logo">
+                <a href="../userHome.html">
+                    <img src="../../pics/logo3.png" alt="logo-Bookkeeping-app">
+                </a>
+            </div>
+
+            <!--Navbar-->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li>
+                        <a href="../userHome.html"><i class='bx bx-log-in'></i>homePage</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--/.Header End-->
 
 
-       <!--Page Content Start-->
+    <!--Page Content Start-->
     <main class="all-employee">
-      <div class="all-employee-title">
-          <h1> Payment</h1>
-      </div>
+        <div class="all-employee-title">
+            <h1> Payment</h1>
+        </div>
 
-      <!--Customer Forms-->
-      <div class="customer-form">
-        <form id="formPayment">
-          <input type="text" id="paymentId" placeholder="Enter Employee Id  ..." required maxlength="9">
-          <input type="date" id="datePayment">
-          <input type="text" id="employeeName" placeholder="Enter Amount ..." required>
-          <div class="">
-              <input type="submit" id="submit" value="Save">
-          </div>
-      
-        </form>
-    </div>
-    <div>
+        <!--Customer Forms-->
+        <div class="customer-form">
+            <form id="formPayment">
+                <input type="text" id="paymentId" placeholder="Enter Employee Id  ..." required maxlength="9">
+                <input type="date" id="datePayment">
+                <input type="text" id="employeeName" placeholder="Enter Amount ..." required>
+                <div class="">
+                    <input type="submit" id="submit" value="Save">
+                </div>
 
-      <!--Customer Table-->
-      <div class="all-employee-table">
-        <table id="tablePayment">
-            <thead>
-                <tr>
-                    <th>Employee Id</th>
-                    <th>Amount</th>
-                    <th>Date</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-    
-            <tbody>
-    
-            </tbody>
-        </table>
-      </div> 
+            </form>
+        </div>
+        <div>
 
-  </main>
-  <!--/.Page Content End-->
+            <!--Customer Table-->
+            <div class="all-employee-table">
+                <table id="tablePayment">
+                    <thead>
+                        <tr>
+                            <th>Employee Id</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
 
-  <footer class="footer">
-      <p>@Copyright By Hyper-Text 2022</p>
-  </footer>
-  
-      <script src="./payment.js"></script>
-  </body>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+    </main>
+    <!--/.Page Content End-->
+
+    <footer class="footer">
+        <p>@Copyright By Hyper-Text 2022</p>
+    </footer>
+
+    <script src="./payment.js"></script>
+</body>
+
 </html>
