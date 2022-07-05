@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../style/balanceSheet.css">
+</head>
+
+<body class="main">
+    <!--Header Start-->
+    <header class="header" id="header">
+        <div class="container">
+            <!--logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../pics/logo4.png" alt="logo-Bookkeeping-app">
+                </a>
+            </div>
+            <i color="black">Bookkeeping</i>
+            <!--Navbar-->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li>
+                        <a href="welcome.html">Home</a>
+                    </li>
+
+                    <li id='userNameHtml'>
+                        <a href="#" id="username"> </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact us</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--/.Header End-->
+
+    <div class="content">
+
+        <section class='balanceSheet'>
+            <div class="balanceSheetTitle">
+                <div>
+                    <h2> BalanceSheet Report </h2>
+                </div>
+            </div>
+        </section>
+        <section class='datePick'>
+            <div>
+                <h3> Select date range </h3>
+                <form class='dateForm'>
+                    <div class='styled'> 
+                       <h5>From</h5>
+                       <input type="date" id="startDate" class="dateStyle">
+                    </div>
+                    <div class="styled">
+                        <h5>To</h5>
+                        <input type="date" id="endDate" class="dateStyle">
+                    </div>
+                    <div class="styled">
+                       <input type="submit" id="submit" value="Show" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="tableSection" id="">
+            <div class="basetable">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Receive To</th>
+                            <th>Receipt</th>
+                            <th>payment</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <td>12</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>33</td>
+                    </tbody>
+                    <tbody>
+                        <td>12</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>33</td>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!--/.Page Content End-->
+
+        <footer class="footer">
+            <p>@Copyright By Hyper-Text 2022</p>
+        </footer>
+
+</body>
+
+</html>
