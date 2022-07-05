@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookkeeping App</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./employeeReport.css" />
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+      <!--Header Start-->
+      <header class="header" id="header">
+          <div class="container">
+              <!--logo-->
+              <div class="logo">
+                 <a href="index.html">
+                      <img src="../../pics/logo3.png" alt="logo-Bookkeeping-app">
+                 </a>
+              </div>
+  
+              <!--Navbar-->
+              <nav class="navbar">
+                  <ul class="nav-list">
+                      <li>
+                          <a href="login.html"><i class='bx bx-log-in'></i>login</a>
+                      </li>
+  
+                      <li>
+                          <a href="login.html"><i class='bx bx-user-circle'></i>sign up</a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+      <!--/.Header End-->
+
+
+       <!--Page Content Start-->
+    <main class="all-employee">
+      <div class="all-employee-title">
+          <h1> Employee Report</h1>
+      </div>
+
+      <!--Customer Forms-->
+      <div class="customer-form">
+        <form id="formPayment">
+            <input type="text" id="searchId" placeholder="Employee Id">
+            <label for="">From</label>
+            <input type="date" id="fromDatePayment">
+            <label for="">To</label>
+            <input type="date" id="toDatePayment">
+            <div class="">
+                <input type="submit" id="submitPayment" value="Show">
+            </div>
+      
+        </form>
+    </div>
+    <div>
+
+      <!--Customer Table-->
+      <div class="all-employee-table">
+        <div class="">
+            <table id="tablePaymentReport">
+                <thead>
+                    <tr>
+                        <th>Employee Id</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+        
+                </tbody>
+            </table>
+    
+            <table id="total-amount">
+                <thead>
+                    <tr>
+                        <th>Total Amount</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+    
+                </tbody>
+            </table>
+        </div>
+      </div> 
+  </main>
+  <!--/.Page Content End-->
+
+  <footer class="footer">
+      <p>@Copyright By Hyper-Text 2022</p>
+  </footer>
+  
+      <script src="./employeeReport.js" type="module"></script>
+  </body>
+</html>
