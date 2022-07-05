@@ -1,0 +1,195 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    background-color: #d9d8d6;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*header Style Start*/
+.header {
+    float: left;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    background-color: #8AABCA;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    background-color: #8AABCA;
+    height: 200px;
+
+
+}
+
+.header .container {
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .container i {
+    padding-top: 18px;
+    font-size: 12px;
+    float: left;
+    color: rgb(58, 56, 56);
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    bottom: 10%;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.header .logo {
+    width: 7vw;
+    height: 8vh;
+}
+
+.header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    width: 92vw;
+}
+
+.header .navbar .nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar .nav-list a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.header .navbar .nav-list li a {
+    color: rgb(47, 45, 45);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: auto 10px;
+}
+
+.header .navbar .nav-list li a i {
+    margin: 6px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.footer {
+    height: 4vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    background-color: #8AABCA;
+}
+
+.welcomeUser {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #8AABCA;
+}
+
+th {
+    background-color: #8AABCA;
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+.tableSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.styled {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+    width: max-content;
+}
+
+.dateForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+
+}
+.dateStyle{
+    margin-left:  10px;
+}
+
+
+.btn {
+    border: 2px solid transparent;
+    background: #8AABCA;
+    margin-left: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+}
