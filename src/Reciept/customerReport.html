@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,83 +12,80 @@
     <link rel="stylesheet" href="../../style/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  </head>
+</head>
 
-  <body>
-      <!--Header Start-->
-      <header class="header" id="header">
-          <div class="container">
-              <!--logo-->
-              <div class="logo">
-                 <a href="index.html">
-                      <img src="../../pics/logo3.png" alt="logo-Bookkeeping-app">
-                 </a>
-              </div>
-  
-              <!--Navbar-->
-              <nav class="navbar">
-                  <ul class="nav-list">
-                      <li>
-                          <a href="login.html"><i class='bx bx-log-in'></i>login</a>
-                      </li>
-  
-                      <li>
-                          <a href="login.html"><i class='bx bx-user-circle'></i>sign up</a>
-                      </li>
-                  </ul>
-              </nav>
-          </div>
-      </header>
-      <!--/.Header End-->
+<body>
+    <!--Header Start-->
+    <header class="header" id="header">
+        <div class="container">
+            <!--logo-->
+            <div class="logo">
+                <a href="../userHome.html">
+                    <img src="../../pics/logo3.png" alt="logo-Bookkeeping-app">
+                </a>
+            </div>
+
+            <!--Navbar-->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li>
+                        <a href="../userHome.html"><i class='bx bx-log-in'></i>homePage</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--/.Header End-->
 
 
-       <!--Page Content Start-->
+    <!--Page Content Start-->
     <main class="all-customers">
-      <div class="all-customers-title">
-          <h1> Reciept </h1>
-      </div>
+        <div class="all-customers-title">
+            <h1> Reciept </h1>
+        </div>
 
-      <!--Customer Forms-->
-      <div class="customer-form">
-        <form id="formRecieptReport" method="post" onsubmit="return getCustomerReport()">
-            <input type="test" id="searchId">
-          <h3 style="margin-top: 20px;">select a range plaese</h3>
-          <input type="date" id="beginningDateReciept">
-          <input type="date" id="endDateReciept">
-          
-          <div class="">
-              <input type="submit" id="submit" value="Save">
-          </div>
-      
-        </form>
-    </div>
-    <div>
+        <!--Customer Forms-->
+        <div class="customer-form">
+            <form id="formRecieptReport" method="post" onsubmit="return getCustomerReport()">
+                <input type="test" id="searchId">
+                <h3 style="margin-top: 20px;">select a range plaese</h3>
+                <input type="date" id="beginningDateReciept">
+                <input type="date" id="endDateReciept">
 
-      <!--Customer Table-->
-      <div class="all-customers-table">
-        <table id="tableCustomers">
-            <thead>
-                <tr>
-                    <th>customer Id</th>
-                    <th>Amount</th>
-                    <th>Date</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-    
-            <tbody>
-    
-            </tbody>
-        </table>
-      </div> 
+                <div class="">
+                    <input type="submit" id="submit" value="Save">
+                </div>
 
-  </main>
-  <!--/.Page Content End-->
+            </form>
+        </div>
+        <div>
 
-  <footer class="footer">
-      <p>@Copyright By Hyper-Text 2022</p>
-  </footer>
-  
-      <script src="./customerReport.js"></script>
-  </body>
+            <!--Customer Table-->
+            <div class="all-customers-table">
+                <table id="tableCustomers">
+                    <thead>
+                        <tr>
+                            <th>customer Id</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+    </main>
+    <!--/.Page Content End-->
+
+    <footer class="footer">
+        <p>@Copyright By Hyper-Text 2022</p>
+    </footer>
+
+    <script src="./customerReport.js"></script>
+</body>
+
 </html>
